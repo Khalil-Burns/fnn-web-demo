@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("backgroundMNIST.webp");
+    background-repeat: repeat;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+canvas {
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: aliceblue;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#cursor-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: none;
+    display: none;
+}
+pre {
+    white-space: pre;
+}
+.data-label {
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.guess-label {
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#guess-container {
+    background-color: aliceblue; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width: 350px; 
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#data-container {
+    display: block; 
+    background-color: aliceblue; 
+    width: 75px; 
+    height: 268px; 
+    padding: 6px;
+    border-radius: 10px;
+    border: 3px solid black;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+button {
+    background-color: rgb(201, 211, 222);
+    border: 3px solid rgb(144, 158, 173);
+    border-radius: 6px;
+}
+button:hover {
+    background-color: rgb(184, 186, 198);
+}
+button:active {
+    background-color: rgb(217, 226, 235);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js" integrity="sha512-1QvjE7BtotQjkq8PxLeF6P46gEpBRXuskzIVgjFpekzFVF4yjRgrQvTG1MTOJ3yQgvTteKAcO7DSZI92+u/yZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js" integrity="sha512-iKDtgDyTHjAitUDdLljGhenhPwrbBfqTKWO1mkhSFH3A7blITC9MhYon6SjnMhp4o0rADGw9yAC6EW4t5a4K3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+    <script src="/websocketScript.js"></script>
+</head>
+<body>
+    <!-- <pre id="ascii-art" style="font-family: Courier New, monospace;"></pre> -->
+    <div id="cursor-circle"></div>
+    <div id="guess-container">
+        <span class="guess-label" id="guess-labal">Computer's guess:&emsp;<span class="guess-display" id="guess-display"></span></span>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <canvas id="drawing-canvas" width="280" height="280"></canvas>
+        <div id="data-container">
+            <div><span class="data-label" id="0-labal">0:&emsp;<span class="data-display" id="0-display"></span></span></div>
+            <div><span class="data-label" id="1-labal">1:&emsp;<span class="data-display" id="1-display"></span></span></div>
+            <div><span class="data-label" id="2-labal">2:&emsp;<span class="data-display" id="2-display"></span></span></div>
+            <div><span class="data-label" id="3-labal">3:&emsp;<span class="data-display" id="3-display"></span></span></div>
+            <div><span class="data-label" id="4-labal">4:&emsp;<span class="data-display" id="4-display"></span></span></div>
+            <div><span class="data-label" id="5-labal">5:&emsp;<span class="data-display" id="5-display"></span></span></div>
+            <div><span class="data-label" id="6-labal">6:&emsp;<span class="data-display" id="6-display"></span></span></div>
+            <div><span class="data-label" id="7-labal">7:&emsp;<span class="data-display" id="7-display"></span></span></div>
+            <div><span class="data-label" id="8-labal">8:&emsp;<span class="data-display" id="8-display"></span></span></div>
+            <div><span class="data-label" id="9-labal">9:&emsp;<span class="data-display" id="9-display"></span></span></div>
+            <button id="clear-button">Clear Canvas</button>
+            <br>
+        </div>
+    <div>
+</body>
+</html>
