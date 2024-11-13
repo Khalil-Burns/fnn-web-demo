@@ -94,18 +94,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         
-        // const asciiChars = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^`'.";
-        // const asciiArray = pixelData.map(val => {
-        //     const index = Math.floor((1.0-val) * (asciiChars.length - 1));
-        //     return asciiChars[index];
-        // });
+        const asciiChars = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^`'.";
+        const asciiArray = pixelData.map(val => {
+            const index = Math.floor((1.0-val) * (asciiChars.length - 1));
+            return asciiChars[index];
+        });
     
-        // // Convert the 1D array into a 28x28 grid
-        // const asciiGrid = [];
-        // for (let i = 0; i < 28; i++) {
-        //     const row = asciiArray.slice(i * 28, i * 28 + 28).map(char => char + char).join('');
-        //     asciiGrid.push(row);
-        // }
+        // Convert the 1D array into a 28x28 grid
+        const asciiGrid = [];
+        for (let i = 0; i < 28; i++) {
+            const row = asciiArray.slice(i * 28, i * 28 + 28).map(char => char + char).join('');
+            asciiGrid.push(row);
+        }
         // // Display the ASCII art
         // const preElement = document.getElementById('ascii-art');
         // preElement.textContent = asciiGrid.join('\n');
