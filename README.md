@@ -19,6 +19,9 @@ This project implements a **Feed-Forward Neural Network (FNN)** from scratch usi
 - The project is based on a feed-forward neural network, which can be computationally expensive and prone to overfitting with large datasets.
 - Requires a significant amount of training data for accurate classification, and alternative models might be more efficient.
 
+## Demo:
+https://github.com/user-attachments/assets/2e0ce9eb-ee49-43db-bb27-bd4605e27751
+
 ## How to Run
 
 To run the project, follow these steps:
